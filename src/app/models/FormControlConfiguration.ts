@@ -6,6 +6,7 @@ export class FormControlConfiguration {
   component: string = '';
 
   constructor(
+    //Test
     label: string = '',
     name: string = '',
     readonly = false,
