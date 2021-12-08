@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let text of textlist">
+    {{ text }}
+  </li>
+</ul>
+<input type="text" [(ngModel)]="newFriend" />
+<button type="button" (click)="addFriend()">Add friend</button>

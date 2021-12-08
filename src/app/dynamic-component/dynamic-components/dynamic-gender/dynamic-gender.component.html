@@ -1,0 +1,24 @@
+<div [formGroup]="parentform" class="nested-group">
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input
+          type="radio"
+          value="male"
+          [formControlName]="formControlConfiguration.name"
+        />
+        male
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input
+          type="radio"
+          value="female"
+          [formControlName]="formControlConfiguration.name"
+        />
+        female
+      </label>
+    </div>
+  </div>
+</div>

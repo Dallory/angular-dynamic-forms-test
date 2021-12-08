@@ -1,0 +1,16 @@
+<h1>Dynamic Form</h1>
+<form [formGroup]="dynamicForm">
+  <div
+    *ngFor="let formControlConfig of formControlConfigurationList"
+    class="col"
+  >
+    <div class="label">{{ formControlConfig.label }}</div>
+    <div class="component">
+      <dynamic-component
+        [formControlConfiguration]="formControlConfig"
+      ></dynamic-component>
+    </div>
+  </div>
+</form>
+
+{{ dynamicForm.value | json }}

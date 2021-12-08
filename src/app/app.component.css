@@ -1,0 +1,13 @@
+.col {
+  width: 100%;
+}
+
+.label {
+  width: 30%;
+  float: left;
+}
+
+.component {
+  width: 70%;
+  float: left;
+}
